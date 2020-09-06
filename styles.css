@@ -1,0 +1,311 @@
+/* https://codecademy-content.s3.amazonaws.com/PRO/independent-practice-projects/flexbox-business-site/example-site/index.html */
+/* https://llewllew.github.io/ALLY-Design-Studio-Homepage/ */
+/* https://andrewgrant721.github.io/quarantinedrinks.github.io/ */
+/* https://vinhyan.github.io/SabrinasCookbook/# */
+/* https://not-triplebyte.surge.sh/#   https://triplebyte.com/ */
+/* https://www.codecademy.com/learn/paths/learn-how-to-build-websites/tracks/advanced-css-flexbox-and-animations/modules/layout-with-flexbox/cheatsheet */
+/* 
+Font 
+Logo
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: lato;
+  margin: 0 auto;
+  text-align: center;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ECF3FC), to(#FFFFFF));
+  background: linear-gradient(to bottom, #ECF3FC, #FFFFFF);
+}
+
+.hero {
+  height: 37rem;
+  background-image: url("https://dvokhk8ohqhd8.cloudfront.net/assets/landing/candidate/pattern-5486b26bc87f9acadf9a7d309dde3af926df8cb8938901c7a8a3e2b4cad614c4.png"), -webkit-gradient(linear, left top, left bottom, from(#1d2e81), to(#32a6ee));
+  background-image: url("https://dvokhk8ohqhd8.cloudfront.net/assets/landing/candidate/pattern-5486b26bc87f9acadf9a7d309dde3af926df8cb8938901c7a8a3e2b4cad614c4.png"), linear-gradient(#1d2e81, #32a6ee);
+}
+
+.hero header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.hero header nav {
+  height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero header nav #logo {
+  padding: 15px 0 0 7%;
+  height: 2.7rem;
+}
+
+.hero header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  position: absolute;
+  right: 1%;
+  margin: 10px 10px 0 0;
+  padding: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero header nav ul li {
+  text-transform: uppercase;
+  margin: 0 15px;
+}
+
+.hero header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero header nav ul button {
+  padding: 10px;
+  text-transform: uppercase;
+  background: none;
+  color: white;
+  border-radius: 5px;
+  border: solid white 1px;
+  letter-spacing: 3px;
+}
+
+.hero .jumbotron {
+  margin: 7rem auto;
+}
+
+.hero .jumbotron h1, .hero .jumbotron h3 {
+  color: white;
+  margin: 10px;
+}
+
+.hero .jumbotron h1 {
+  font-size: 4rem;
+}
+
+.hero .jumbotron h3 {
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+.hero .jumbotron .butt {
+  color: white;
+  background: #499DE3;
+  padding: 1.2rem;
+  margin: 0.5rem;
+  font-size: 1.5em;
+  border-radius: 12px;
+  border: none;
+}
+
+.cards-section {
+  padding: 8rem;
+  height: 1000px;
+}
+
+.cards-section .tagline {
+  padding-bottom: 2rem;
+}
+
+.cards-section .products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.cards-section .products .card {
+  padding-top: 0px;
+  width: 200px;
+  height: 250px;
+  background-color: white;
+  border-radius: 14px;
+}
+
+.cards-section .products .card h5 {
+  position: relative;
+  text-align: right;
+  right: 10px;
+  top: 10px;
+  font-size: bold;
+  color: #4A90E2;
+}
+
+.cards-section .products .card img, .cards-section .products .card h3, .cards-section .products .card p, .cards-section .products .card h4 {
+  margin: 10px 0;
+  color: #2e2e2e;
+}
+
+.brands h3, .brands span {
+  margin: 20px;
+  line-height: 1.8;
+}
+
+.brands h3 {
+  font-size: 1.6rem;
+}
+
+.brands .brand-logos {
+  margin: 0.5rem auto;
+  width: 50rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[5];
+  -ms-grid-columns: (1fr)[5];
+      grid-template: repeat(5, 1fr)/repeat(5, 1fr);
+}
+
+.brands .brand-logos img {
+  padding: 0.5rem 0;
+}
+
+.brands .brand-logos .weirds {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.questions {
+  padding: 8rem;
+  height: 40rem;
+  background: #344759;
+}
+
+.questions h3, .questions h2, .questions p {
+  color: white;
+}
+
+.questions .q-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.team {
+  height: 30rem;
+}
+
+.team h3 {
+  font-size: 1.6rem;
+}
+
+.team .team-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.team .team-row .team-photo1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 150px;
+          flex: 1 1 150px;
+  background-image: url("https://llewllew.github.io/ALLY-Design-Studio-Homepage/resources/mholmes.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.team .team-row .team-photo2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 150px;
+          flex: 1 1 150px;
+  background-image: url("https://llewllew.github.io/ALLY-Design-Studio-Homepage/resources/lbaker.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.team .team-row .team-photo3 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 150px;
+          flex: 1 1 150px;
+  background-image: url("https://llewllew.github.io/ALLY-Design-Studio-Homepage/resources/mcox.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.team .team-row .team-photo4 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 150px;
+          flex: 1 1 150px;
+  background-image: url("https://llewllew.github.io/ALLY-Design-Studio-Homepage/resources/abenson.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.team .team-row .team-photo5 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 150px;
+          flex: 1 1 150px;
+  background-image: url("https://llewllew.github.io/ALLY-Design-Studio-Homepage/resources/jshore.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer {
+  background: darkslategrey;
+  height: 150px;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 30px;
+}
+
+footer ul li {
+  list-style: none;
+  margin: 0 10px;
+  font-size: 0.75rem;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,272 @@
+/* https://codecademy-content.s3.amazonaws.com/PRO/independent-practice-projects/flexbox-business-site/example-site/index.html */
+/* https://llewllew.github.io/ALLY-Design-Studio-Homepage/ */
+/* https://andrewgrant721.github.io/quarantinedrinks.github.io/ */
+/* https://vinhyan.github.io/SabrinasCookbook/# */
+/* https://not-triplebyte.surge.sh/#   https://triplebyte.com/ */
+/* https://www.codecademy.com/learn/paths/learn-how-to-build-websites/tracks/advanced-css-flexbox-and-animations/modules/layout-with-flexbox/cheatsheet */
+
+/* 
+Font 
+Logo
+
+*/
+
+$section-margins: 7rem auto;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: lato;
+    margin: 0 auto;
+    text-align: center;
+}
+
+body {
+    background: linear-gradient(to bottom, #ECF3FC, #FFFFFF);
+}
+
+
+.hero {
+    height: 37rem;
+    background-image: url('https://dvokhk8ohqhd8.cloudfront.net/assets/landing/candidate/pattern-5486b26bc87f9acadf9a7d309dde3af926df8cb8938901c7a8a3e2b4cad614c4.png'),
+    linear-gradient(rgb(29, 46, 129), rgb(50, 166, 238));
+
+    header {
+        display: flex;
+        width: 100%;
+        // position: fixed;
+        // z-index: 5;
+
+        nav {
+            height: 75px;
+            // border-bottom: solid 1.5px black;
+            display: flex;
+
+            #logo {
+                padding: 15px 0 0 7%;
+                height: 2.7rem;
+            }
+        
+            ul {
+                display: flex;
+                list-style: none;
+                position: absolute;
+                right: 1%;
+                margin: 10px 10px 0 0;
+                padding: 10px;
+                justify-content: center;
+                align-items: center;
+        
+                li {
+                    text-transform: uppercase;
+                    margin: 0 15px;
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+        
+                button {
+                    padding: 10px;
+                    text-transform: uppercase;
+                    background: none;
+                    color: white;
+                    border-radius: 5px;
+                    border: solid white 1px;
+                    letter-spacing: 3px;
+                }
+            }
+        }
+    }
+
+    .jumbotron {
+        margin: $section-margins;
+
+        h1, h3 {
+            color: white;
+            margin: 10px;
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: lighter;
+        }
+
+        .butt {
+            color: white;
+            background: #499DE3; 
+            padding: 1.2rem;
+            margin: 0.5rem;
+            font-size: 1.5em;
+            border-radius: 12px;
+            border: none;
+        }
+    }
+
+}
+
+.cards-section {
+    padding: 8rem;
+    
+    .tagline {
+        padding-bottom: 2rem;
+    }
+
+
+    height: 1000px;
+    .products {
+        display: flex;
+        justify-content: space-evenly;
+        .card {
+            padding-top: 0px;
+            width: 200px;
+            height: 250px;
+            background-color: white;
+            border-radius: 14px;
+    
+            h5 {
+                position: relative;
+                text-align: right;
+                right: 10px;
+                top: 10px;
+                font-size: bold;
+                color: #4A90E2;
+            }
+    
+            img, h3, p, h4 {
+                margin: 10px 0;
+                color: rgb(46, 46, 46)
+            }
+        }
+    }
+}
+
+.brands {
+
+    h3, span {
+        margin: 20px;
+        line-height: 1.8;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    .brand-logos {
+        margin: 0.5rem auto;
+        width: 50rem;
+        display: grid;
+        grid-template: repeat(5, 1fr) / repeat(5, 1fr);
+
+        img {
+            padding: 0.5rem 0;
+        }
+        .weirds {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+
+
+
+.questions {
+    padding: 8rem;
+    height: 40rem;
+    background: #344759;
+
+    h3, h2, p {
+        color: white
+    }
+    
+    .q-cards {
+        display: flex;
+
+
+    }
+}
+
+
+.team {
+    height: 30rem;
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    .team-row {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        flex-wrap: wrap;
+
+        .team-photo1 {
+            flex: 1 1 150px;
+            background-image: url('https://llewllew.github.io/ALLY-Design-Studio-Homepage/resources/mholmes.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .team-photo2 {
+            flex: 1 1 150px;
+            background-image: url('https://llewllew.github.io/ALLY-Design-Studio-Homepage/resources/lbaker.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .team-photo3 {
+            flex: 1 1 150px;
+            background-image: url('https://llewllew.github.io/ALLY-Design-Studio-Homepage/resources/mcox.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .team-photo4 {
+            flex: 1 1 150px;
+            background-image: url('https://llewllew.github.io/ALLY-Design-Studio-Homepage/resources/abenson.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .team-photo5 {
+            flex: 1 1 150px;
+            background-image: url('https://llewllew.github.io/ALLY-Design-Studio-Homepage/resources/jshore.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}
+
+footer {
+    background: darkslategrey;
+    height: 150px;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+
+        li {
+            list-style: none;
+            margin: 0 10px;
+            font-size: 0.75rem;
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}
