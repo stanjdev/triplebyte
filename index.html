@@ -2,8 +2,10 @@
 
 <html>
   <head>
-    <title></title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Triplebyte</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="triplebyte.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" type="text/css">
@@ -13,12 +15,13 @@
     <div class="hero">
       <header>
         <nav>
-          <img id="logo" src="https://dvokhk8ohqhd8.cloudfront.net/assets/ntriplebyte_logo_70-4b3c02fcd9866c06c492cdc677b28edf3010a9a0c1261db64c820943266f9333.png" alt="company logo">
-          <ul>
+          <a href="#"><img id="logo" src="https://dvokhk8ohqhd8.cloudfront.net/assets/ntriplebyte_logo_70-4b3c02fcd9866c06c492cdc677b28edf3010a9a0c1261db64c820943266f9333.png" alt="company logo"></a>
+          <ul class="navbar">
             <li><button id="companybutt">For Companies</button></li>
             <li><a href="#">Sign Up</a></li>
             <li><a href="#">Login</a></li>
           </ul>
+          <div class="burgerButton"><h1>burger</h1></div>
         </nav>
       </header>
 
@@ -26,21 +29,46 @@
         <h1>Join 200,000+ Top Engineers</h1>
         <h3>Showcase your tech skills and hear from top companies!</h3>
         <div class="butts">
-          <button class="butt">Find your next job -></button>
-          <button class="butt">Improve your skills -></button>
+          <button class="butt">Find your next job 
+            <i class="arrowContainer">
+              <i class="arrowStem"></i>
+              <i class="arrow"></i>
+            </i>
+          </button>
+          <button class="butt">Improve your skills
+            <i class="arrowContainer">
+              <i class="arrowStem"></i>
+              <i class="arrow"></i>
+            </i>
+          </button>
         </div>
         <div class="butts">
-          <button class="butt">Get your Triplebyte credential -></button>
-          <button class="butt">Take the quiz -></button>
+          <button class="butt">Get your Triplebyte credential 
+            <i class="arrowContainer">
+              <i class="arrowStem"></i>
+              <i class="arrow"></i>
+            </i>
+          </button>
+          <button class="butt">Take the quiz 
+            <i class="arrowContainer">
+              <i class="arrowStem"></i>
+              <i class="arrow"></i>
+            </i>
+          </button>
         </div>
       </div>
+    </div>
+
+    <div class="bottom-chevron">
+      <div class="bottom-chevron__left"></div>
+      <div class="bottom-chevron__right"></div>
     </div>
 
     <div class="cards-section">
       <h4 class="tagline">CHOOSE YOUR TRACK</h4>
       <h5 class="tagline">LOOKING FOR THE NEXT STEP IN YOUR CAREER?</h5>
   
-      <div class="products">
+      <div class="products blueCards">
         <div class="card">
           <img src="https://dvokhk8ohqhd8.cloudfront.net/assets/track-generalist-58193a5bc0698dbb11a16e64cfbe50c2993b3de907255181337612724b7d0495.svg" alt="generalist icon">
           <h3>Generalist</h3>
@@ -84,14 +112,15 @@
         </div>
       </div>
   
-      <h5>LOOKING FOR YOUR FIRST PROGRAMMING JOB?</h5>
+
+      <h5 class="subHeadings">LOOKING FOR YOUR FIRST PROGRAMMING JOB?</h5>
   
-      <div class="products">
+      <div class="products entry">
         <div class="card">
           <h5>NEW</h5>
           <img src="https://dvokhk8ohqhd8.cloudfront.net/assets/track-junior-6d04d903ef702d0c078768b68622a17e3fe8c6df2ccb97ba74e7c57b47f9b04e.svg" alt="generalist icon">
           <h3>Generalist</h3>
-          <p>(Entry-level)</p>
+          <p class="entryLevel">(Entry-level)</p>
           <p>You're looking for your first programming job and didn't specialize in front-end development. (Beta)</p>
           <h4>Take the generalist quiz</h4>
         </div>
@@ -100,15 +129,12 @@
           <h5>NEW</h5>
           <img src="https://dvokhk8ohqhd8.cloudfront.net/assets/track-frontend_junior-619a08517b3a6d05cee0e9c2b1a6f13d6bac083e195452a45b2c6a8ee2010a50.svg" alt="generalist icon">
           <h3>Front End</h3>
-          <p>(Entry-level)</p>
+          <p class="entryLevel">(Entry-level)</p>
           <p>You're looking for your first programming job and specialize in front-end development. (Beta)</p>
           <h4>Take the front-end quiz</h4>
         </div>
       </div>
     </div>
-
-    
-
 
 
 
@@ -147,14 +173,14 @@
         <img src="https://dvokhk8ohqhd8.cloudfront.net/assets/company_logos/twitch-11a222a3c71fa506553f52dbdb1052f157184f832ae4cc3c4ddbaa15f9aa9b64.svg" alt="Twitch">
         <img src="https://dvokhk8ohqhd8.cloudfront.net/assets/company_logos/wish-d3673f3a0e0d35e16a7a32c1f04141b9d63ae119411684de1e6d4adb53c61a6f.svg" alt="Wish">
         <img src="https://dvokhk8ohqhd8.cloudfront.net/assets/company_logos/zoox-5b7bad7a2ef006e157ab5d5dfd25b646965b83c293d0dc9a1ef8a3704725a245.svg" alt="Zoox">
-        <div class="weirds"><img src="https://dvokhk8ohqhd8.cloudfront.net/assets/company_logos/asana-674750fa348147b52fa26d5070e347873ab37d9e7994c599355355f4d80ec42c.svg" alt="Asana"></div>
+        <div id="asana" class="weirds"><img src="https://dvokhk8ohqhd8.cloudfront.net/assets/company_logos/asana-674750fa348147b52fa26d5070e347873ab37d9e7994c599355355f4d80ec42c.svg" alt="Asana"></div>
       </div>
     </section>
     
 
 
     <section class="questions">
-      <h3>TOP QUESTIONS</h3>
+      <h3>Top Questions</h3>
 
       <div class="q-cards">
         <div class="question">
@@ -185,34 +211,44 @@
       <h3>Our Team</h3>
 
       <div class="team-row">
-        <div class="team-photo1">
-          <div>
-            <h2>Meghan Holmes</h2>
-            <p>CEO</p>
+        <div class="team-photo1 team-member">
+          <div class="teamText">
+            <div class="teamText__desc">
+              <h2>Meghan Holmes</h2>
+              <p>CEO</p>
+            </div>
           </div>
         </div>
-        <div class="team-photo2">
-          <div>
-            <h2>Louise Baker</h2>
-            <p>ART DIRECTOR</p>
+        <div class="team-photo2 team-member">
+          <div class="teamText">
+            <div class="teamText__desc">
+              <h2>Louise Baker</h2>
+              <p>ART DIRECTOR</p>
+            </div>
           </div>
         </div>
-        <div class="team-photo3">
-          <div>
-            <h2>Matthew Cox</h2>
-            <p>LEAD DESIGNER</p>
+        <div class="team-photo3 team-member">
+          <div class="teamText">
+            <div class="teamText__desc">
+              <h2>Matthew Cox</h2>
+              <p>LEAD DESIGNER</p>
+            </div>
           </div>
         </div>
-        <div class="team-photo4">
-          <div>
-            <h2>Alice Benson</h2>
-            <p>LEAD DESIGNER</p>
+        <div class="team-photo4 team-member">
+          <div class="teamText">
+            <div class="teamText__desc">
+              <h2>Alice Benson</h2>
+              <p>LEAD DESIGNER</p>
+            </div>
           </div>
         </div>
-        <div class="team-photo5">
-          <div>
-            <h2>Jackie Shore</h2>
-            <p>LEAD WEB DEVELOPER</p>
+        <div class="team-photo5 team-member">
+          <div class="teamText">
+            <div class="teamText__desc">
+              <h2>Jackie Shore</h2>
+              <p>LEAD WEB DEVELOPER</p>
+            </div>
           </div>
         </div>
       </div>
@@ -222,7 +258,7 @@
 
 
     <footer>
-      <ul>
+      <ul class="footerLinks1">
         <li><a href="#">ABOUT</a></li>
         <li><a href="#">MANIFESTO</a></li>
         <li><a href="#">OPEN SOURCE DONATIONS</a></li>
@@ -235,7 +271,7 @@
         <li><a href="#">CONTACT</a></li>
         <li><a href="#">CAREERS</a></li>
       </ul>
-      <ul>
+      <ul class="footerLinks2">
         <li><a href="#">Privacy Center</a></li>
         <li><a href="#">Privacy Policy</a></li>
         <li><a href="#">Terms and Conditions</a></li>
